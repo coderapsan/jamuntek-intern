@@ -9,7 +9,7 @@ pipeline{
                 // sh 'cat intern.pem'
                 // sh 'chmod 400 intern.pem'
                 // sh 'id'
-                 sh 'git branch 'prod' '''
+                 sh 'git branch 'prod'
                  sh 'ls -ltr'
 
             }
