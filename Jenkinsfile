@@ -16,6 +16,7 @@ pipeline{
         stage('Build') {
             steps {
              sh 'rm -Rf ~/tmp'
+                sh 'mkdir ~/tmp'
                 
                  sh 'cp -r . ~/tmp'
                 sh 'ls -ltr ~/tmp'
