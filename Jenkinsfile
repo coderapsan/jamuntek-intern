@@ -14,7 +14,7 @@ pipeline{
         stage('Build') {
             steps {
               sh 'mkdir ~/tmp'
-                 sh 'cp . ~/tmp'
+                 sh 'cp -r . ~/tmp'
             }
         }
     }
