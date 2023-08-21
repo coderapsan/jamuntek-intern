@@ -5,7 +5,7 @@ pipeline{
         stage('Build') {
             steps {
                 git branch: 'prod', url: 'https://github.com/coderapsan/jamuntek-intern.git'
-                sh 'nvm -v'
+                sh 'ls -ltr'
             }
         }
     }
