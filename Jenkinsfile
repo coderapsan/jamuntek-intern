@@ -1,9 +1,12 @@
-pipeline {
+pipeline{
     agent any
-    stages {
-        stage('build') {
+    tools {nodejs "node"}
+    
+    stages{
+        stages('Build'){
             steps {
-                sh 'ls -ltr'
+                git branch: 'prod', url: 'https://github.com/coderapsan/jamuntek-intern.git'
+                bat 'nvm -v'
             }
         }
     }
