@@ -8,7 +8,7 @@ pipeline{
                 sh 'ls -ltr'
                 sh 'cat intern.pem'
                 sh 'chmod 400 intern.pem'
-                sh 'nvm -v'
+                
             }
         }
     }
