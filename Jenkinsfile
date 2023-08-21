@@ -18,6 +18,7 @@ pipeline{
              sh 'rm -Rf ~/tmp'
                 
                  sh 'cp -r . ~/tmp'
+                sh 'ls -ltr ~/tmp'
             }
         }
     }
