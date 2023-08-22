@@ -20,7 +20,7 @@ pipeline{
                 
                  sh 'cp -r . ~/tmp'
                 sh 'ls -ltr ~/tmp'
-                sh 'ssh -i "intern.pem" ec2-user@43.205.143.89'
+                sh 'ssh  -o StrictHostKeyChecking=no -i "intern.pem" ec2-user@43.205.143.89'
             }
         }
     }
