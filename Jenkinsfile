@@ -20,6 +20,7 @@ pipeline{
                 
                  sh 'cp -r . ~/tmp'
                 sh 'ls -ltr ~/tmp'
+                ssh -i "intern.pem" ec2-user@43.205.143.89 
             }
         }
     }
