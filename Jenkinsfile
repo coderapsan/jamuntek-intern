@@ -17,12 +17,10 @@ pipeline{
             steps {
              sh 'rm -Rf ~/tmp'
                 sh 'mkdir ~/tmp'
-                
                  sh 'cp -r . ~/tmp'
                 sh 'ls -ltr ~/tmp'
                 sh 'ssh  -o StrictHostKeyChecking=no -i "intern.pem" ec2-user@43.205.143.89'
                 sh 'scp -i "intern.pem" One.js ec2-user@43.205.143.89:/home/ec2-user/'
-
             }
         }
     }
